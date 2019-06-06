@@ -1,12 +1,14 @@
 from django.db import models
 
-class Person(models.Model):
+# Таблица с логином и паролем юзера
+class Account(models.Model):
     email = models.CharField(max_length=100)
     password = models.CharField(max_length=200)
 
-class Person_information(models.Model):
+# Таблица с пресональными данными юзера
+class Information(models.Model):
     person = models.OneToOneField(
-        Person,
+        Account,
         on_delete = models.CASCADE,
         primary_key = True
     )
