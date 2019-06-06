@@ -14,3 +14,12 @@ class Information(models.Model):
     )
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
+
+# Таблица со статусами юзера
+class Status(models.Model):
+    person = models.OneToOneField(
+        Account,
+        on_delete = models.CASCADE,
+        primary_key = True
+    )
+    email_confirm = models.BooleanField(default = False)
