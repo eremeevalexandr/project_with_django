@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     'apps.home_page',
     'apps.account',
+    'apps.callboard',
 ]
 
 MIDDLEWARE = [
