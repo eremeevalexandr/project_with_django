@@ -41,6 +41,9 @@ INSTALLED_APPS = [
     'apps.home_page',
     'apps.account',
     'apps.callboard',
+
+
+    'django_mptt_admin',
 ]
 
 MIDDLEWARE = [
